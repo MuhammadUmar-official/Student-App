@@ -4,11 +4,8 @@ import pandas as pd
 import pickle 
 
 # ================= LOAD MODEL & FEATURES =================
-with open("model.pkl", "rb") as f:
-    model = pickle.load(f)
-
-with open("features.pkl", "rb") as f:
-    features = pickle.load(f)
+model = pickle.load(open("model.pkl", "rb"))
+features = pickle.load(open("features.pkl", "rb"))
 
 # ================= APP CONFIG =================
 st.set_page_config(page_title="Student Performance Predictor", layout="wide")
