@@ -1,7 +1,7 @@
 # ================= IMPORTS =================
 import streamlit as st
 import pandas as pd
-import pickle  # ✅ pickle instead of joblib
+import pickle  
 
 # ================= LOAD MODEL & FEATURES =================
 with open("model.pkl", "rb") as f:
